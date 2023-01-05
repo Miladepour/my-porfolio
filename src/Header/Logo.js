@@ -1,6 +1,6 @@
 const Logo = () => {
   return (
-    <a className="navbar-brand nav-link" href="#">
+    <a href="#" className="logoStyle">
       Milad E-Pour
     </a>
   );
