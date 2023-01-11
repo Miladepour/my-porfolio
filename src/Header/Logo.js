@@ -1,8 +1,10 @@
 const Logo = () => {
   return (
-    <a href="#" className="logoStyle">
-      Milad E-Pour
-    </a>
+    <>
+      <a href="#" className="logo">
+        Milad E-Pour
+      </a>
+    </>
   );
 };
 export default Logo;

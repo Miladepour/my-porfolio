@@ -1,9 +1,8 @@
 import Logo from "./Logo";
 const Navigation = () => {
   return (
-    <div>
-      <ul className="" style={{ zIndex: 2000 }}>
-        <Logo />
+    <>
+      <ul className="nav navbar-nav">
         <li className="">
           <a href="#" className="">
             Resume
@@ -20,7 +19,7 @@ const Navigation = () => {
           </a>
         </li>
       </ul>
-    </div>
+    </>
   );
 };
 

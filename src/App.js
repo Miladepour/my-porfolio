@@ -1,9 +1,11 @@
 import "./App.css";
 import NavBar from "./Header/NavBar";
-import Intro from "./Main/Intro";
+import Intro from "./Hero/Intro";
 import React from "react";
-import AboutMe from "./Main/AboutMe";
-import SelectionBtn from "./Main/SelectionBtn";
+import AboutMe from "./Hero/AboutMe";
+//import SelectionBtn from "./SelectionDisplay/SelectionBtn";
+import ContactForm from "./Form/ContactForm";
+import DisplayList from "./SelectionDisplay/DisplayList";
 
 const App = () => {
   return (
@@ -11,7 +13,8 @@ const App = () => {
       <NavBar />
       <Intro />
       <AboutMe />
-      <SelectionBtn />
+      <DisplayList />
+      {/* <ContactForm /> */}
     </div>
   );
 };
