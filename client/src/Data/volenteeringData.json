@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Founder",
+        "company": "Tarannom Christan Network Channel",
+        "date": "July 2016 - Present",
+        "location": "Sweden - United Kingdom",
+        "desc": "Tarannom TV is a Christian network television channel. All programs and sections are missionary and educational. Some programs are Talk shows while others are music videos, and other parts are lyrics and articles. The programs are broadcast through different platforms such as Tarannom TV's YouTube channel and other social media. On Tarannom TV's website, there is a news page, a magazine and a section for children. Below is the link and a picture on the page.",
+        "countryCode":"SE"
+    },
+    {
+        "id": 2,
+        "title": "Teaching Assistant",
+        "company": "CodeYourFuture",
+        "date": "Nov 2022 - Dec 2022",
+        "location": "Manchester, England, United Kingdom",
+        "desc": "A five-week daily digital course that helps people learn the basics of the internet and their smartphones.",
+        "countryCode":"GB"
+    }
+]

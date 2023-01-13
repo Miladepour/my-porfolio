@@ -1,0 +1,10 @@
+POST http://localhost:4000/api/signup
+Content-Type: application/json
+
+{
+    "fullName": "Nichole Arabi",
+    "company": "Google",
+    "contact": "07366600022",
+    "email": "Nichole@gmail.com",
+    "message": "Hi we want to Hire you!!"
+}
