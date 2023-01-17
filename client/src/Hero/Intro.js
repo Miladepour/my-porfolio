@@ -4,9 +4,7 @@ const Intro = () => {
   return (
     <div>
       <div className="heroSection">
-        <p className="heroFristP">
-          Hi, my name is<span> 👋🏼 </span>
-        </p>
+        <p className="heroFristP">Hi, my name is 👋🏼</p>
         <div className="nameAnimation">
           <h1 className="typewriter">{"{Milad E-Pour}"}</h1>
           <h2 className="textBelowName">I build things for the web.</h2>

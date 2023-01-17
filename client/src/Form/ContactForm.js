@@ -43,6 +43,11 @@ const ContactForm = () => {
         res.status === 200
           ? setAfterSubmit("Thank you for getting in touch with me")
           : setAfterSubmit(`Please try again${res.status}`);
+        setFullName("");
+        setCompany("");
+        setContact("");
+        setEmail("");
+        setMessage("");
       })
       .catch((error) => console.error(error));
   }
