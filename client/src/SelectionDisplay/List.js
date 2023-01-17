@@ -18,6 +18,20 @@ function List({ allData }) {
                 {data.location}
               </li>
               <li key={index}>{data.desc}</li>
+              {data.image ? (
+                <li>
+                  <img src={data.image} alt="Project" />
+                </li>
+              ) : (
+                ""
+              )}
+              {data.link ? (
+                <li>
+                  <a href={data.link}>Visit this Website</a>
+                </li>
+              ) : (
+                ""
+              )}
             </ul>
             <hr className="dashed"></hr>
           </div>

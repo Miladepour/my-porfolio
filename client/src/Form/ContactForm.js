@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-// import emailjs from "@emailjs/browser";
 import axios from "axios";
 
 const ContactForm = () => {
@@ -10,26 +9,8 @@ const ContactForm = () => {
   const [contact, setContact] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [afterSubmit, setAfterSubmit] = useState("");
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs
-  //     .sendForm(
-  //       "service_v5dlkf3",
-  //       "template_npy73kb",
-  //       form.current,
-  //       "CXlZ1TkTy4STyR66N"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         e.target.reset();
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // };
   function handleFullNameChange(event) {
     setFullName(event.target.value);
   }
@@ -57,43 +38,66 @@ const ContactForm = () => {
     };
     axios
       .post("http://localhost:4000/api/signup", registered)
-      .then((res) => console.log(res.data));
+      .then((res) => {
+        console.log(res.data);
+        res.status === 200
+          ? setAfterSubmit("Thank you for getting in touch with me")
+          : setAfterSubmit(`Please try again${res.status}`);
+      })
+      .catch((error) => console.error(error));
   }
 
   return (
     <form ref={form} onSubmit={onSubmit} className="contactForm">
-      <label>Name</label>
+      <h3 className="formTitle">
+        Feel free to contact me by filling out the following form
+      </h3>
+      <label className="form__label"></label>
       <input
         type="text"
         name="fullName"
         onChange={handleFullNameChange}
         value={fullName}
-        placeholder="Enter your full name"
+        className="form__field"
+        placeholder="Your Full Name"
       />
-      <label>Company</label>
+      <label className="form__label"></label>
       <input
         type="text"
         name="company"
         onChange={handleCompanyNameChange}
         value={company}
+        className="form__field"
+        placeholder="Company Name"
       />
-      <label>Contact No</label>
+      <label className="form__label"></label>
       <input
         type="text"
         name="contact"
         onChange={handleContactNumberChange}
         value={contact}
+        className="form__field"
+        placeholder="Contact No"
       />
-      <label>Email</label>
+      <label className="form__label"></label>
       <input
         type="email"
         name="email"
         onChange={handleEmailAddChange}
         value={email}
+        className="form__field"
+        placeholder="Email"
       />
-      <label>Message</label>
-      <textarea name="message" onChange={handleMessageChange} value={message} />
-      <input type="submit" value="Sumbit" />
+      <label className="form__label"></label>
+      <textarea
+        name="message"
+        onChange={handleMessageChange}
+        value={message}
+        className="form__field"
+        placeholder="Your Message"
+      />
+      <input type="submit" value="Sumbit" className="formBtn" />
+      <p>{afterSubmit}</p>
     </form>
   );
 };

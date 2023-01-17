@@ -1,3 +1,4 @@
+import { SocialIcon } from "react-social-icons";
 const AboutMe = () => {
   return (
     <div className="sectionAboutMe">
@@ -15,6 +16,15 @@ const AboutMe = () => {
           My main focus these days is building accessible, inclusive products
           and digital experiences at Upstatement for a variety of clients.
         </p>
+        <SocialIcon
+          url="https://github.com/Miladepour"
+          className="socialmedia"
+          bgColor="#009290"
+        />
+        <SocialIcon
+          url="https://www.linkedin.com/in/milad-e-pour-a7a8a5239/"
+          className="socialmedia"
+        />
       </section>
       <section className="leftSideSection">
         <p className="aboutMeText">

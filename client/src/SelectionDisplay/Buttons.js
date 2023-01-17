@@ -4,6 +4,7 @@ import volenteeringData from "../Data/volenteeringData.json";
 import experienceQuotes from "../Data/experienceQuotes.json";
 import educationQuotes from "../Data/educationQuotes.json";
 import volenteeringQuotes from "../Data/volenteeringQuotes.json";
+import project from "../Data/projects.json";
 
 const Buttons = ({ SetData, setMessage }) => {
   function expOnClick() {
@@ -23,6 +24,9 @@ const Buttons = ({ SetData, setMessage }) => {
     SetData(volenteeringData);
     setMessage(random);
   }
+  function porjectOnClick() {
+    SetData(project);
+  }
   return (
     <div>
       <h3 className="titleAboveBtn">
@@ -38,7 +42,9 @@ const Buttons = ({ SetData, setMessage }) => {
         <button onClick={volOnClick} className="button-86">
           Volenteering
         </button>
-        <button className="button-86">Projects</button>
+        <button onClick={porjectOnClick} className="button-86">
+          Projects
+        </button>
       </div>
     </div>
   );
