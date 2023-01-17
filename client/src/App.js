@@ -16,8 +16,8 @@ const App = () => {
         <Intro />
         <AboutMe />
         <DisplayList />
+        <ContactForm />
       </main>
-      <ContactForm />
     </>
   );
 };
