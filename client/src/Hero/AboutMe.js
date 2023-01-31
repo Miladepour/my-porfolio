@@ -38,6 +38,11 @@ const AboutMe = () => {
           <li>MongoDB</li>
           <li>SQL</li>
         </ul>
+        <img
+          src="https://cynoco.co.uk/wp-content/uploads/2022/06/Untitled-design2.png"
+          alt="Milad Ebrahimpour"
+          className="personlImage"
+        />
       </section>
     </div>
   );

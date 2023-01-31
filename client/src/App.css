@@ -98,6 +98,15 @@ a:link {
   padding-left: 40px;
   border-left: #00c24a 2px solid;
 }
+.personlImage {
+  width: 600px;
+  opacity: 0.3;
+}
+.personlImage:hover {
+  opacity: 0.6;
+  transition: 1s;
+}
+
 .list {
   display: flex;
   flex-direction: column;
@@ -165,6 +174,7 @@ a:link {
   border-bottom: 2px solid gray;
   outline: 0;
   font-size: 25px;
+  caret-color: #00c24a;
 }
 .form__field:focus {
   border-bottom: 2px solid #00c24a;
