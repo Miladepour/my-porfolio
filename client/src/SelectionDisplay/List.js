@@ -17,7 +17,10 @@ function List({ allData }) {
                 <ReactCountryFlag countryCode={data.countryCode} />
                 {data.location}
               </li>
+<<<<<<< HEAD
               <li key={index}>{data.desc}</li>
+=======
+>>>>>>> origin/main
               {data.image ? (
                 <li>
                   <img src={data.image} alt="Project" />
@@ -33,6 +36,7 @@ function List({ allData }) {
                 ""
               )}
             </ul>
+            <p>{data.desc}</p>
             <hr className="dashed"></hr>
           </div>
         );
