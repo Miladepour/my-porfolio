@@ -1,15 +1,15 @@
-import React, { useRef, useState } from "react";
-import axios from "axios";
+import React, { useRef, useState } from 'react';
+import axios from 'axios';
 
 const ContactForm = () => {
   const form = useRef();
 
-  const [fullName, setFullName] = useState("");
-  const [company, setCompany] = useState("");
-  const [contact, setContact] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [afterSubmit, setAfterSubmit] = useState("");
+  const [fullName, setFullName] = useState('');
+  const [company, setCompany] = useState('');
+  const [contact, setContact] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [afterSubmit, setAfterSubmit] = useState('');
 
   function handleFullNameChange(event) {
     setFullName(event.target.value);
@@ -37,20 +37,17 @@ const ContactForm = () => {
       message: message,
     };
     axios
-      .post("http://localhost:4000/api/signup", registered)
+      .post('http://localhost:4000/api/signup', registered)
       .then((res) => {
         console.log(res.data);
         res.status === 200
-          ? setAfterSubmit("Thank you for getting in touch with me")
+          ? setAfterSubmit('Thank you for getting in touch with me')
           : setAfterSubmit(`Please try again${res.status}`);
-<<<<<<< HEAD
-=======
-        setFullName("");
-        setCompany("");
-        setContact("");
-        setEmail("");
-        setMessage("");
->>>>>>> origin/main
+        setFullName('');
+        setCompany('');
+        setContact('');
+        setEmail('');
+        setMessage('');
       })
       .catch((error) => console.error(error));
   }

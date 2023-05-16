@@ -1,4 +1,4 @@
-import ReactCountryFlag from "react-country-flag";
+import ReactCountryFlag from 'react-country-flag';
 function List({ allData }) {
   return (
     <>
@@ -17,23 +17,20 @@ function List({ allData }) {
                 <ReactCountryFlag countryCode={data.countryCode} />
                 {data.location}
               </li>
-<<<<<<< HEAD
               <li key={index}>{data.desc}</li>
-=======
->>>>>>> origin/main
               {data.image ? (
                 <li>
                   <img src={data.image} alt="Project" />
                 </li>
               ) : (
-                ""
+                ''
               )}
               {data.link ? (
                 <li>
                   <a href={data.link}>Visit this Website</a>
                 </li>
               ) : (
-                ""
+                ''
               )}
             </ul>
             <p>{data.desc}</p>
