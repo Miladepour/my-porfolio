@@ -1,0 +1,10 @@
+.logo {
+  background: linear-gradient(to right, hsl(98 100% 62%), hsl(204 100% 59%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+}
+.toggleButton {
+  color: red; /* Change this color to your desired color */
+  background-color: thistle;
+}
