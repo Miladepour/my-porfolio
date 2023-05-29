@@ -14,16 +14,10 @@ const NavBar = () => {
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link
-              href="#http://localhost:4000/download"
-              style={{ color: 'white' }}
-            >
+            <Nav.Link href="/api/downloadcv" style={{ color: 'white' }}>
               Portfolio
             </Nav.Link>
-            <Nav.Link
-              href="http://localhost:4000/download"
-              style={{ color: 'white' }}
-            >
+            <Nav.Link href="/api/downloadcv" style={{ color: 'white' }}>
               Download Resume
             </Nav.Link>
             <SocialIcon

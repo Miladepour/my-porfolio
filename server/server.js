@@ -1,26 +1,28 @@
-const express = require("express");
+const express = require('express');
 const app = express();
-const mongoose = require("mongoose");
-const dotenv = require("dotenv");
-const routesUrls = require("./routes/routes");
-const cors = require("cors");
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
+const routesUrls = require('./routes/routes');
+const downloadcv = require('./routes/downloadcv');
+const cors = require('cors');
 
 dotenv.config();
 
-mongoose.set("strictQuery", false);
+mongoose.set('strictQuery', false);
 
 mongoose.connect(process.env.DATABASE_ACCESS, () => {
-  console.log("Database Connected ...");
+  console.log('Database Connected ...');
 });
 
 app.use(express.json());
 app.use(cors());
-app.use("/api", routesUrls);
+app.use('/api', routesUrls);
+app.use('/api/downloadcv', downloadcv);
 
-app.get("/healthcheck", async (_req, res, _next) => {
+app.get('/healthcheck', async (_req, res, _next) => {
   const healthcheck = {
     uptime: process.uptime(),
-    message: "OK",
+    message: 'OK',
     timestamp: Date.now(),
   };
   try {
@@ -31,13 +33,5 @@ app.get("/healthcheck", async (_req, res, _next) => {
   }
 });
 
-app.get("/download", (req, res) => {
-  const filePath = "data/Milad CV.pdf";
-  const fileName = "Milad CV.pdf";
-
-  res.download(filePath, fileName);
-});
-
-app.listen(4000, () => {
-  console.log("Server is running on port 4000 ");
-});
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
