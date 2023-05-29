@@ -1,5 +1,5 @@
 import styles from "./Intro.module.css";
-import introPic from "../assets/intpc.png";
+import introPic from "../assets/ballabout.png";
 import { Container, Row, Col, Image } from "react-bootstrap";
 const Intro = () => {
   return (
@@ -27,7 +27,7 @@ const Intro = () => {
       </Row>
       <Row className="justify-content-md-center">
         <Col xs={12} sm={4} md={5}>
-          <Image src={introPic} fluid />
+          <Image src={introPic} />
         </Col>
       </Row>
     </Container>

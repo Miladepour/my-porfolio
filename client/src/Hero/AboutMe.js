@@ -1,7 +1,7 @@
 import { SocialIcon } from "react-social-icons";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import styles from "./AboutMe.module.css";
-import introPic from "../assets/ballabout.png";
+
 const AboutMe = () => {
   return (
     <Container className={styles.aboutMe}>
@@ -20,15 +20,6 @@ const AboutMe = () => {
             using modern technologies. Let's collaborate and transform your
             vision into a captivating online presence.
           </p>
-          <SocialIcon
-            url="https://github.com/Miladepour"
-            style={{ height: 40, width: 40, marginLeft: 10 }}
-            bgColor="#009290"
-          />
-          <SocialIcon
-            url="https://www.linkedin.com/in/milad-e-pour-a7a8a5239/"
-            style={{ height: 40, width: 40, marginLeft: 10 }}
-          />
         </Col>
         <Col>
           <p className={styles.aboutMeText}>
@@ -46,11 +37,6 @@ const AboutMe = () => {
             <li>Docker</li>
             <li>Google Cloud Platform</li>
           </ul>
-        </Col>
-      </Row>
-      <Row className="justify-content-md-center">
-        <Col xs={12} sm={4} md={5}>
-          <Image src={introPic} fluid />
         </Col>
       </Row>
     </Container>
