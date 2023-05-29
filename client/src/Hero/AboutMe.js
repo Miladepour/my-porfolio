@@ -36,12 +36,16 @@ const AboutMe = () => {
             Here are a few technologies I’ve been working with recently:
           </p>
           <ul className={styles.aboutMeList}>
+            <li>HTML & CSS</li>
             <li>JavaScript (ES6+)</li>
             <li>React</li>
-            <li>Node.js</li>
-            <li>WordPress</li>
+            <li>Node.js (Express) </li>
             <li>MongoDB</li>
-            <li>SQL</li>
+            <li>Postgre SQL</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Docker</li>
+            <li>Google Cloud Platform</li>
           </ul>
         </Col>
       </Row>

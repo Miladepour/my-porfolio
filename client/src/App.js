@@ -1,11 +1,11 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from './Header/NavBar';
-import Intro from './Hero/Intro';
-import React from 'react';
-import AboutMe from './Hero/AboutMe';
-import ContactForm from './Form/ContactForm';
-import DisplayList from './SelectionDisplay/DisplayList';
+import "bootstrap/dist/css/bootstrap.min.css";
+import NavBar from "./Header/NavBar";
+import Intro from "./Hero/Intro";
+import React from "react";
+import AboutMe from "./Hero/AboutMe";
+import ContactForm from "./Form/ContactForm";
+import DisplayList from "./SelectionDisplay/DisplayList";
+import "./App.css";
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
       <header>
         <NavBar />
       </header>
-      <main>
+      <main className="appMain">
         <Intro />
         <AboutMe />
         <DisplayList />
