@@ -1,14 +1,26 @@
 .logo {
-  background: linear-gradient(to right, hsl(98, 100%, 14%), hsl(204, 88%, 55%));
+  background: linear-gradient(
+    to right,
+    hsl(225, 100%, 15%),
+    hsl(152, 100%, 22%)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 30px !important;
   font-weight: 400;
 }
 .toggleButton {
-  background: linear-gradient(to right, hsl(98 100% 62%), hsl(204 100% 59%));
+  background: linear-gradient(
+    to right,
+    hsl(98 100% 62%),
+    hsla(204, 98%, 39%, 0.46)
+  );
 }
 .toggle {
   border: none !important;
   outline: none;
+}
+.navvv {
+  background: linear-gradient(to right, #00ff7b98, rgba(0, 242, 255, 0.479)),
+    url(https://grainy-gradients.vercel.app/noise.svg);
 }

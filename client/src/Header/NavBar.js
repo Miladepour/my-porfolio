@@ -9,10 +9,11 @@ const NavBar = () => {
     <Navbar
       bg="black"
       expand="lg"
-      style={{
-        background:
-          "linear-gradient(to right, hsl(98 100% 62%), hsl(204 100% 59%))",
-      }}
+      className={styles.navvv}
+      // style={{
+      //   background:
+      //     "linear-gradient(to right, hsl(98 100% 62%), hsl(204 100% 59%))",
+      // }}
     >
       <Container>
         <Navbar.Brand className={styles.logo}>Milad E-Pour</Navbar.Brand>
