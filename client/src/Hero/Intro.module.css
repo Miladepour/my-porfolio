@@ -1,0 +1,37 @@
+.hero {
+  min-height: 100vh;
+  margin-top: 30px;
+}
+.heroSecondP {
+  font-size: 30px;
+  color: rgba(250, 235, 215, 0.448);
+  transition: 2s;
+}
+.heroSecondP span {
+  background: linear-gradient(to right, hsl(98 100% 62%), hsl(204 100% 59%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-weight: 500px;
+  font-size: 40px;
+}
+
+.heroFristP {
+  color: #00c24a;
+  font-size: 30px;
+}
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: wrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+  font-size: 100px;
+  padding-left: 20px;
+}
+.textBelowName {
+  font-size: 60px;
+  color: rgba(250, 235, 215, 0.448);
+  transition: 2s;
+}
