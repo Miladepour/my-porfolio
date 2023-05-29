@@ -1,0 +1,18 @@
+.aboutMe {
+  height: 100vh;
+}
+.aboutMeTitle {
+  background: linear-gradient(to right, hsl(98 100% 62%), hsl(204 100% 59%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+}
+.aboutMeText {
+  font-size: 22px;
+}
+.aboutMeList {
+  font-size: 22px;
+  border-left: #00c24a 2px solid;
+}

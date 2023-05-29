@@ -5,45 +5,6 @@
   font-family: "Ubuntu Mono", monospace;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-.aboutMe {
-  height: 100vh;
-  max-width: 700px;
-}
-.dashed {
-  color: #00c24a;
-  width: 80px;
-  border-top: 5px solid #00c24a;
-}
-.sectionAboutMe {
-  display: flex;
-}
-.aboutMeTitle {
-  background: linear-gradient(to right, hsl(98 100% 62%), hsl(204 100% 59%));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: left;
-  font-size: 30px;
-  padding-left: 15px;
-  font-weight: bold;
-}
-.aboutMeText {
-  font-size: 22px;
-  padding-left: 30px;
-}
-.aboutMeList {
-  font-size: 18px;
-  padding-left: 40px;
-  border-left: #00c24a 2px solid;
-}
-.personlImage {
-  width: 600px;
-  opacity: 0.3;
-}
-.personlImage:hover {
-  opacity: 0.6;
-  transition: 1s;
 }
 
 .list {
@@ -122,29 +83,6 @@
   background-color: #009290;
   color: aliceblue;
   transition: 0.8s;
-}
-.socialmedia {
-  margin-left: 20px;
-}
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
 }
 
 /* CSS Button */

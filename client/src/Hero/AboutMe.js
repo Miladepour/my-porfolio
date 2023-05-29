@@ -2,16 +2,16 @@ import { SocialIcon } from "react-social-icons";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import styles from "./AboutMe.module.css";
 const AboutMe = () => {
   return (
-    <Container>
+    <Container className={styles.aboutMe}>
       <Row>
         <Col>
-          {" "}
-          <h3 className="aboutMeTitle">
-            <span className="aboutMeTitle">01.</span>About Me
+          <h3 className={styles.aboutMeTitle}>
+            <span className={styles.aboutMeTitle}>01.</span>About Me
           </h3>
-          <p className="aboutMeText">
+          <p className={styles.aboutMeText}>
             Greetings! I'm Milad E-pour, a web developer passionate about
             bringing ideas to life on the internet. My journey in web
             development began in 2015 when I delved into the world of WordPress
@@ -23,34 +23,26 @@ const AboutMe = () => {
           </p>
           <SocialIcon
             url="https://github.com/Miladepour"
-            className="socialmedia"
+            style={{ height: 40, width: 40, marginLeft: 10 }}
             bgColor="#009290"
           />
           <SocialIcon
             url="https://www.linkedin.com/in/milad-e-pour-a7a8a5239/"
-            className="socialmedia"
+            style={{ height: 40, width: 40, marginLeft: 10 }}
           />
         </Col>
         <Col>
-          {" "}
-          <section className="leftSideSection">
-            <p className="aboutMeText">
-              Here are a few technologies I’ve been working with recently:
-            </p>
-            <ul className="aboutMeList">
-              <li>JavaScript (ES6+)</li>
-              <li>React</li>
-              <li>Node.js</li>
-              <li>WordPress</li>
-              <li>MongoDB</li>
-              <li>SQL</li>
-            </ul>
-            <img
-              src="https://cynoco.co.uk/wp-content/uploads/2022/06/Untitled-design2.png"
-              alt="Milad Ebrahimpour"
-              className="personlImage"
-            />
-          </section>
+          <p className={styles.aboutMeText}>
+            Here are a few technologies I’ve been working with recently:
+          </p>
+          <ul className={styles.aboutMeList}>
+            <li>JavaScript (ES6+)</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>WordPress</li>
+            <li>MongoDB</li>
+            <li>SQL</li>
+          </ul>
         </Col>
       </Row>
     </Container>
