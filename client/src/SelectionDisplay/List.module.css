@@ -1,0 +1,4 @@
+.cardHeader {
+  background: url(https://grainy-gradients.vercel.app/noise.svg),
+    linear-gradient(to right, #00f97998, rgba(0, 173, 182, 0.479));
+}

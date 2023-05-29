@@ -1,41 +1,36 @@
-import ReactCountryFlag from 'react-country-flag';
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import styles from "./List.module.css";
+
+import ReactCountryFlag from "react-country-flag";
 function List({ allData }) {
   return (
     <>
       {allData.map((data, index) => {
         return (
-          <div className="list">
-            <h3 key={index} className="listTitlePlusSub">
-              {data.title}
-            </h3>
-            <h6 key={index} className="listTitlePlusSub">
-              {data.company}
-            </h6>
-            <ul className="list">
-              <li key={index}>{data.date}</li>
-              <li key={index}>
-                <ReactCountryFlag countryCode={data.countryCode} />
+          <Card as="h5" style={{ color: "black" }}>
+            <Card.Header key={index} className={styles.cardHeader}>
+              {data.company} / {data.title}
+            </Card.Header>
+            <Card.Body>
+              <Card.Title>
                 {data.location}
-              </li>
-              <li key={index}>{data.desc}</li>
-              {data.image ? (
-                <li>
-                  <img src={data.image} alt="Project" />
-                </li>
-              ) : (
-                ''
-              )}
+                <ReactCountryFlag countryCode={data.countryCode} />
+              </Card.Title>
+              <Card.Title>{data.date}</Card.Title>
+              <Card.Text>{data.desc}</Card.Text>
+              <Card.Text>
+                {data.image ? <img src={data.image} alt="Project" /> : ""}
+              </Card.Text>
               {data.link ? (
-                <li>
-                  <a href={data.link}>Visit this Website</a>
-                </li>
+                <Button variant="primary" href={data.link}>
+                  Visit this Website
+                </Button>
               ) : (
-                ''
+                ""
               )}
-            </ul>
-            <p>{data.desc}</p>
-            <hr className="dashed"></hr>
-          </div>
+            </Card.Body>
+          </Card>
         );
       })}
     </>
