@@ -1,8 +1,7 @@
 import { SocialIcon } from "react-social-icons";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import styles from "./AboutMe.module.css";
+import introPic from "../assets/ballabout.png";
 const AboutMe = () => {
   return (
     <Container className={styles.aboutMe}>
@@ -47,6 +46,11 @@ const AboutMe = () => {
             <li>Docker</li>
             <li>Google Cloud Platform</li>
           </ul>
+        </Col>
+      </Row>
+      <Row className="justify-content-md-center">
+        <Col xs={12} sm={4} md={5}>
+          <Image src={introPic} fluid />
         </Col>
       </Row>
     </Container>
