@@ -27,7 +27,7 @@ function List({ allData }) {
                 {data.image ? <img src={data.image} alt="Project" /> : ""}
               </Card.Text>
               {data.link ? (
-                <Button variant="primary" href={data.link}>
+                <Button className={styles.button86} href={data.link}>
                   Visit this Website
                 </Button>
               ) : (
