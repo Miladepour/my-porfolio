@@ -12,7 +12,7 @@
         "tech":"React, Node.js, Express, PostgreSQL, Render, HTML, CSS, JavaScript, Bootstrap, reCAPTCHA, Twilio API, SendGrid API",
         "tools":"Git, GitHub, Slack, Zoom, Figma, Postman",
         "github":"https://github.com/Miladepour/SyntaxSquad-Project-Kunji",
-        "projectLocation": "India / United Kingom / Remote",
+        "projectLocation": "India / United Kingdom / Remote",
         "myRole":"Full-stack Developer"
     },
     {
@@ -28,18 +28,23 @@
         "tech":"React, Node.js, Express, MongoDB, AWS, HTML, CSS(SASS), JavaScript, Docker,Swagger Bootstrap",
         "tools":"Git, GitHub, Slack, Zoom, Postman",
         "github":"https://github.com/Miladepour/SyntaxSquad-Project-Kunji",
-        "projectLocation": "United Kingom / Remote",
+        "projectLocation": "United Kingdom / Remote",
         "myRole":"Full-stack Developer"
     },
     {
         "id": 3,
-        "title": "TV Project",
-        "company": "Code Your Future",
+        "title": "Christian Chat AI",
+        "company": "Solo Project",
         "date": "2022",
         "location": "United Kingdom",
-        "desc": "This Project has been done with HTML - CSS - JAVASCRPIT DOM",
+        "desc": "ChristianChatAI is an innovative website that combines the wisdom of the Holy Scriptures with the power of AI technology. Engage in meaningful religious discussions from Orthodox, Catholic, and Protestant perspectives, and deepen your faith in an inclusive and interactive community of like-minded believers.",
         "countryCode":"GB",
-        "link" : "https://cyf-miladepour-tv.netlify.app/",
-        "image" : "https://cynoco.co.uk/wp-content/uploads/2023/01/Screenshot-2023-01-16-at-18.58.44.png"
+        "link" : "/",
+        "image" : "https://cynoco.co.uk/wp-content/uploads/2023/05/Screenshot-2023-05-30-at-21.50.24.png",
+        "tech":"React, Node.js, Express, HTML, CSS, JavaScript, Bootstrap, Open AI API",
+        "tools":"Git, GitHub, Postman",
+        "github":"https://github.com/Miladepour/christianchatai",
+        "projectLocation": "United Kingdom / Remote",
+        "myRole":"Full-stack Developer"
     }
 ]

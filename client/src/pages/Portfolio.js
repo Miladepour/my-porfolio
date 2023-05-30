@@ -20,7 +20,7 @@ const Portfolio = () => {
             className={styles.pageHeaderText}
             style={{ fontSize: "20px", textAlign: "center" }}
           >
-            here you can find my latest project
+            here you can find my latest projects
           </p>
         </Col>
       </Row>

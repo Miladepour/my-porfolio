@@ -11,14 +11,14 @@ const AboutMe = () => {
             <span className={styles.aboutMeTitle}>01.</span>About Me
           </h3>
           <p className={styles.aboutMeText}>
-            Greetings! I'm Milad E-pour, a web developer passionate about
-            bringing ideas to life on the internet. My journey in web
-            development began in 2015 when I delved into the world of WordPress
-            and Wix, experimenting with editing websites. Since then, my
-            fascination with creating online experiences has only grown. I
-            specialize in designing and developing dynamic web applications
-            using modern technologies. Let's collaborate and transform your
-            vision into a captivating online presence.
+            Greetings! I'm a web developer passionate about bringing ideas to
+            life on the internet. My journey in web development began in 2015
+            when I delved into the world of WordPress and Wix, experimenting
+            with editing websites. Since then, my fascination with creating
+            online experiences has only grown. I specialize in designing and
+            developing dynamic web applications using modern technologies. Let's
+            collaborate and transform your vision into a captivating online
+            presence.
           </p>
         </Col>
         <Col>

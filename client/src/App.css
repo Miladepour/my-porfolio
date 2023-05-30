@@ -5,6 +5,17 @@
 .appMain {
   color: antiquewhite;
   background-color: #000000f7;
+  background-image: url(./assets/stars2.png);
+  animation: infiniteScroll 50s linear infinite;
+}
+
+@keyframes infiniteScroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
 }
 
 .list {

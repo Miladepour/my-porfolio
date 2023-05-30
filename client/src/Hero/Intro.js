@@ -18,10 +18,12 @@ const Intro = () => {
       <Row>
         <Col>
           <p className={styles.heroSecondP}>
-            I’m a Jr <span>Software Developer</span> specializing in building
-            (and occasionally designing) exceptional digital experiences.
-            Currently, I’m focused on improving my skill with backend and
-            database.
+            I am a junior <span>Software Developer</span> with a passion for
+            creativity and innovation. My expertise lies in working with both
+            front-end and back-end technologies, specifically with React and
+            Node.js. I enjoy designing exceptional digital experiences and
+            constantly strive to push the boundaries of what is possible on the
+            web.
           </p>
         </Col>
       </Row>
