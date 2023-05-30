@@ -1,25 +1,23 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./Header/NavBar";
-import Intro from "./Hero/Intro";
-import React from "react";
-import AboutMe from "./Hero/AboutMe";
-import ContactForm from "./Form/ContactForm";
-import DisplayList from "./SelectionDisplay/DisplayList";
 import "./App.css";
+import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
 
 const App = () => {
   return (
-    <>
+    <Router>
       <header>
         <NavBar />
       </header>
-      <main className="appMain">
-        <Intro />
-        <AboutMe />
-        <DisplayList />
-        <ContactForm />
-      </main>
-    </>
+      <div className="appMain">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 

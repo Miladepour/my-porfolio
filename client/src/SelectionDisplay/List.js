@@ -9,7 +9,11 @@ function List({ allData }) {
       {allData.map((data, index) => {
         return (
           <Card as="h5" style={{ color: "black" }}>
-            <Card.Header key={index} className={styles.cardHeader}>
+            <Card.Header
+              key={index}
+              className={styles.cardHeader}
+              style={{ fontWeight: "bold" }}
+            >
               {data.company} / {data.title}
             </Card.Header>
             <Card.Body>

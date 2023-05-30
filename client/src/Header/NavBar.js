@@ -3,20 +3,15 @@ import { Container, Nav, Navbar, Image } from "react-bootstrap";
 import styles from "./NavBar.module.css";
 import { SocialIcon } from "react-social-icons";
 import mobileMenuIcon from "../assets/menu.png";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <Navbar
-      bg="black"
-      expand="lg"
-      className={styles.navvv}
-      // style={{
-      //   background:
-      //     "linear-gradient(to right, hsl(98 100% 62%), hsl(204 100% 59%))",
-      // }}
-    >
+    <Navbar bg="black" expand="lg" className={styles.navvv}>
       <Container>
-        <Navbar.Brand className={styles.logo}>Milad E-Pour</Navbar.Brand>
+        <Navbar.Brand className={styles.logo} href="/">
+          <Link to="/">Milad E-Pour</Link>
+        </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
           className={styles.toggle}
@@ -25,11 +20,17 @@ const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link
-              href="/api/downloadcv"
-              style={{ color: "#00406b", fontSize: "20px" }}
-            >
-              Portfolio
+            <Nav.Link>
+              <Link
+                to="/portfolio"
+                style={{
+                  color: "#00406b",
+                  fontSize: "20px",
+                  textDecoration: "none",
+                }}
+              >
+                Portfolio
+              </Link>
             </Nav.Link>
             <Nav.Link
               href="/api/downloadcv"
