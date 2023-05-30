@@ -1,8 +1,8 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import styles from "./List.module.css";
-
 import ReactCountryFlag from "react-country-flag";
+
 function List({ allData }) {
   return (
     <>

@@ -1,6 +1,38 @@
 [
     {
         "id": 1,
+        "title": "Kunji",
+        "company": "Project Unlearn",
+        "date": "2022",
+        "location": "United Kingdom",
+        "desc": "Delivered a professional level product to an international client by working with three other developers in an AGILE/SCRUM team. Developed a full-stack website with user and admin capabilities. Users can enter their information and receive location-based results. Information can be sent via email, SMS, or WhatsApp. Admin can manage user information and add, delete and update NGO data.",
+        "countryCode":"GB",
+        "link" : "https://starter-kit-j5ar.onrender.com/",
+        "image" : "https://cynoco.co.uk/wp-content/uploads/2023/05/SyntaxSquad.png",
+        "tech":"React, Node.js, Express, PostgreSQL, Render, HTML, CSS, JavaScript, Bootstrap, reCAPTCHA, Twilio API, SendGrid API",
+        "tools":"Git, GitHub, Slack, Zoom, Figma, Postman",
+        "github":"https://github.com/Miladepour/SyntaxSquad-Project-Kunji",
+        "projectLocation": "India / United Kingom / Remote",
+        "myRole":"Full-stack Developer"
+    },
+    {
+        "id": 2,
+        "title": "Class Planner",
+        "company": "Code Your Future",
+        "date": "2022",
+        "location": "United Kingdom",
+        "desc": "Contributed as a member of an Agile Scrum team, responsible for developing and delivering front-end and back-end applications to meet the needs of the users and the organization. Collaborated with the Product Team to build impactful features that support the day-to-day operations of CYF, utilizing Agile methodologies to ensure the efficient and effective delivery of high-quality software solutions.",
+        "countryCode":"GB",
+        "link" : "https://cyf-miladepour-tv.netlify.app/",
+        "image" : "https://cynoco.co.uk/wp-content/uploads/2023/05/Screenshot-2023-05-30-at-13.04.52.png",
+        "tech":"React, Node.js, Express, MongoDB, AWS, HTML, CSS(SASS), JavaScript, Docker,Swagger Bootstrap",
+        "tools":"Git, GitHub, Slack, Zoom, Postman",
+        "github":"https://github.com/Miladepour/SyntaxSquad-Project-Kunji",
+        "projectLocation": "United Kingom / Remote",
+        "myRole":"Full-stack Developer"
+    },
+    {
+        "id": 3,
         "title": "TV Project",
         "company": "Code Your Future",
         "date": "2022",

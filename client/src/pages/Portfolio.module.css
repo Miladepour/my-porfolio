@@ -1,0 +1,11 @@
+.pageHeader {
+  height: 400px;
+  background: linear-gradient(to right, #00ff7b98, rgba(0, 242, 255, 0.479)),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+.pageHeaderText {
+  color: rgb(0, 41, 96);
+}
