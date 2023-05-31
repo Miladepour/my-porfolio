@@ -1,15 +1,17 @@
-import React, { useRef, useState } from 'react';
-import axios from 'axios';
+import React, { useRef, useState } from "react";
+import axios from "axios";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
 const ContactForm = () => {
   const form = useRef();
 
-  const [fullName, setFullName] = useState('');
-  const [company, setCompany] = useState('');
-  const [contact, setContact] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [afterSubmit, setAfterSubmit] = useState('');
+  const [fullName, setFullName] = useState("");
+  const [company, setCompany] = useState("");
+  const [contact, setContact] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [afterSubmit, setAfterSubmit] = useState("");
 
   function handleFullNameChange(event) {
     setFullName(event.target.value);
@@ -37,73 +39,81 @@ const ContactForm = () => {
       message: message,
     };
     axios
-      .post('http://localhost:4000/api/signup', registered)
+      .post("http://localhost:4000/api/signup", registered)
       .then((res) => {
         console.log(res.data);
         res.status === 200
-          ? setAfterSubmit('Thank you for getting in touch with me')
+          ? setAfterSubmit("Thank you for getting in touch with me")
           : setAfterSubmit(`Please try again${res.status}`);
-        setFullName('');
-        setCompany('');
-        setContact('');
-        setEmail('');
-        setMessage('');
+        setFullName("");
+        setCompany("");
+        setContact("");
+        setEmail("");
+        setMessage("");
       })
       .catch((error) => console.error(error));
   }
 
   return (
-    <form ref={form} onSubmit={onSubmit} className="contactForm">
-      <h3 className="formTitle">
-        Feel free to contact me by filling out the following form
-      </h3>
-      <label className="form__label"></label>
-      <input
-        type="text"
-        name="fullName"
-        onChange={handleFullNameChange}
-        value={fullName}
-        className="form__field"
-        placeholder="Your Full Name"
-      />
-      <label className="form__label"></label>
-      <input
-        type="text"
-        name="company"
-        onChange={handleCompanyNameChange}
-        value={company}
-        className="form__field"
-        placeholder="Company Name"
-      />
-      <label className="form__label"></label>
-      <input
-        type="text"
-        name="contact"
-        onChange={handleContactNumberChange}
-        value={contact}
-        className="form__field"
-        placeholder="Contact No"
-      />
-      <label className="form__label"></label>
-      <input
-        type="email"
-        name="email"
-        onChange={handleEmailAddChange}
-        value={email}
-        className="form__field"
-        placeholder="Email"
-      />
-      <label className="form__label"></label>
-      <textarea
-        name="message"
-        onChange={handleMessageChange}
-        value={message}
-        className="form__field"
-        placeholder="Your Message"
-      />
-      <input type="submit" value="Sumbit" className="formBtn" />
+    <Form ref={form} onSubmit={onSubmit} className="contactForm">
+      <Form.Group controlId="fullName">
+        <Form.Label>Your Full Name</Form.Label>
+        <Form.Control
+          type="text"
+          name="fullName"
+          onChange={handleFullNameChange}
+          value={fullName}
+          placeholder="Your Full Name"
+        />
+      </Form.Group>
+
+      <Form.Group controlId="company">
+        <Form.Label>Company Name</Form.Label>
+        <Form.Control
+          type="text"
+          name="company"
+          onChange={handleCompanyNameChange}
+          value={company}
+          placeholder="Company Name"
+        />
+      </Form.Group>
+
+      <Form.Group controlId="contact">
+        <Form.Label>Contact No</Form.Label>
+        <Form.Control
+          type="text"
+          name="contact"
+          onChange={handleContactNumberChange}
+          value={contact}
+          placeholder="Contact No"
+        />
+      </Form.Group>
+
+      <Form.Group controlId="email">
+        <Form.Label>Email</Form.Label>
+        <Form.Control
+          type="email"
+          name="email"
+          onChange={handleEmailAddChange}
+          value={email}
+          placeholder="Email"
+        />
+      </Form.Group>
+
+      <Form.Group controlId="message">
+        <Form.Label>Your Message</Form.Label>
+        <Form.Control
+          as="textarea"
+          name="message"
+          onChange={handleMessageChange}
+          value={message}
+          placeholder="Your Message"
+        />
+      </Form.Group>
+
+      <Button type="submit">Submit</Button>
       <p>{afterSubmit}</p>
-    </form>
+    </Form>
   );
 };
 

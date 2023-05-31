@@ -43,7 +43,7 @@ const AboutMe = () => {
       <Row className="justify-content-md-center">
         <Col className="text-center">
           <h3 style={{ fontSize: "70px", fontWeight: "bold" }}>
-            My knowlage galaxy
+            My knowledge galaxy
           </h3>
           <Image src={galexy}></Image>
         </Col>

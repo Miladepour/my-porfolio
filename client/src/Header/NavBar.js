@@ -32,6 +32,18 @@ const NavBar = () => {
                 Portfolio
               </Link>
             </Nav.Link>
+            <Nav.Link>
+              <Link
+                to="/contact"
+                style={{
+                  color: "#00406b",
+                  fontSize: "20px",
+                  textDecoration: "none",
+                }}
+              >
+                Contact
+              </Link>
+            </Nav.Link>
             <Nav.Link
               href="/api/downloadcv"
               style={{ color: "#00406b", fontSize: "20px" }}
