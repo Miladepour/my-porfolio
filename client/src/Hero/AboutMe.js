@@ -1,6 +1,7 @@
 import { SocialIcon } from "react-social-icons";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import styles from "./AboutMe.module.css";
+import galexy from "../assets/galexy.png";
 
 const AboutMe = () => {
   return (
@@ -37,6 +38,14 @@ const AboutMe = () => {
             <li>Docker</li>
             <li>Google Cloud Platform</li>
           </ul>
+        </Col>
+      </Row>
+      <Row className="justify-content-md-center">
+        <Col className="text-center">
+          <h3 style={{ fontSize: "70px", fontWeight: "bold" }}>
+            My knowlage galaxy
+          </h3>
+          <Image src={galexy}></Image>
         </Col>
       </Row>
     </Container>

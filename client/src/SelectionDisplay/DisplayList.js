@@ -12,8 +12,8 @@ function DisplayList() {
       <Row>
         <Col>
           <Buttons SetData={SetData} setMessage={setMessage} />
-          <h4 className="listTitles">{message.quote}</h4>
-          <p className="listSubTitles">{message.author}</p>
+          <h4 className="text-center pt-5">{message.quote}</h4>
+          <p className="text-center pt-2">{message.author}</p>
           <List allData={data} />
         </Col>
       </Row>

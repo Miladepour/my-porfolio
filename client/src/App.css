@@ -2,6 +2,7 @@
 * {
   font-family: "Ubuntu Mono", monospace;
 }
+
 .appMain {
   color: antiquewhite;
   background-color: #000000f7;
@@ -11,48 +12,13 @@
 
 @keyframes infiniteScroll {
   0% {
-    background-position: 0 0;
+    background-position: 0% 0;
+  }
+  50% {
   }
   100% {
     background-position: 100% 0;
   }
-}
-
-.list {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  padding: 50px;
-  list-style-type: none;
-  align-items: flex-start;
-}
-.listTop {
-  display: flex;
-}
-.listTitlePlusSub {
-  color: #00c24a;
-}
-.listExtraStyle {
-  background-color: rgba(164, 164, 164, 0.059);
-}
-
-.titleAboveBtn {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-weight: bold;
-}
-.listTitles {
-  text-align: center;
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-.listSubTitles {
-  text-align: center;
-  margin-bottom: 50px;
 }
 
 .contactForm {
