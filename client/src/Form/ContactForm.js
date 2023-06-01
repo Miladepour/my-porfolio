@@ -29,7 +29,7 @@ const ContactForm = () => {
     setMessage(event.target.value);
   }
 
-  function onSubmit(event) {
+  async function onSubmit(event) {
     event.preventDefault();
     const registered = {
       fullName: fullName,
@@ -38,24 +38,31 @@ const ContactForm = () => {
       email: email,
       message: message,
     };
-    axios
-      .post("http://localhost:4000/api/signup", registered)
-      .then((res) => {
-        console.log(res.data);
-        res.status === 200
-          ? setAfterSubmit("Thank you for getting in touch with me")
-          : setAfterSubmit(`Please try again${res.status}`);
-        setFullName("");
-        setCompany("");
-        setContact("");
-        setEmail("");
-        setMessage("");
-      })
-      .catch((error) => console.error(error));
+
+    try {
+      const res = await axios.post("/api/signup", registered);
+      console.log(res.status); // Log the response status
+      console.log(res.data); // Log the response data
+
+      if (res.status === 200) {
+        setAfterSubmit("Thank you for getting in touch with me");
+      } else {
+        setAfterSubmit(`Please try again${res.status}`);
+      }
+
+      setFullName("");
+      setCompany("");
+      setContact("");
+      setEmail("");
+      setMessage("");
+    } catch (error) {
+      console.error(error);
+      // Handle error
+    }
   }
 
   return (
-    <Form ref={form} onSubmit={onSubmit} className="contactForm">
+    <Form ref={form} onSubmit={onSubmit}>
       <Form.Group controlId="fullName">
         <Form.Label>Your Full Name</Form.Label>
         <Form.Control
