@@ -4,6 +4,7 @@ import styles from "./NavBar.module.css";
 import { SocialIcon } from "react-social-icons";
 import mobileMenuIcon from "../assets/menu.png";
 import { Link } from "react-router-dom";
+import CV from "../assets/miladcv.pdf";
 
 const NavBar = () => {
   return (
@@ -45,7 +46,8 @@ const NavBar = () => {
               </Link>
             </Nav.Link>
             <Nav.Link
-              href="/api/downloadcv"
+              href={CV}
+              download="Milad-Epour-CV.pdf"
               style={{ color: "#00406b", fontSize: "20px" }}
             >
               Download Resume
