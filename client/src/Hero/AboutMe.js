@@ -1,4 +1,3 @@
-import { SocialIcon } from "react-social-icons";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import styles from "./AboutMe.module.css";
 import galexy from "../assets/galexy.png";

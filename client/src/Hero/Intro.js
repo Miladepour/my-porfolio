@@ -28,8 +28,8 @@ const Intro = () => {
         </Col>
       </Row>
       <Row className="justify-content-md-center">
-        <Col xs={12} sm={4} md={5}>
-          <Image src={introPic} />
+        <Col sm={12} md={6} className="text-center">
+          <Image src={introPic} fluid />
         </Col>
       </Row>
     </Container>

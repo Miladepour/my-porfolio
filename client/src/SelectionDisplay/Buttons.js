@@ -1,4 +1,6 @@
+import React from "react";
 import { useState } from "react";
+import { Button } from "react-bootstrap";
 import experinceData from "../Data/experienceData.json";
 import educationData from "../Data/educationData.json";
 import volenteeringData from "../Data/volenteeringData.json";
@@ -43,27 +45,41 @@ const Buttons = ({ SetData, setMessage }) => {
         </h3>
       )}
       <div className={styles.btnSelection}>
-        <button
+        <Button
           onClick={expOnClick}
-          value="experince"
+          variant="light"
           className={styles.button86}
         >
           Experiences
-        </button>
-        <button onClick={eduOnClick} className={styles.button86}>
+        </Button>
+        <Button
+          onClick={eduOnClick}
+          variant="light"
+          className={styles.button86}
+        >
           Educations
-        </button>
-        <button onClick={volOnClick} className={styles.button86}>
+        </Button>
+        <Button
+          onClick={volOnClick}
+          variant="light"
+          className={styles.button86}
+        >
           Volenteering
-        </button>
-        <button onClick={porjectOnClick} className={styles.button86}>
+        </Button>
+        <Button
+          onClick={porjectOnClick}
+          variant="light"
+          className={styles.button86}
+        >
           Projects
-        </button>
+        </Button>
       </div>
     </div>
   );
 };
+
 function pickFromArray(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
+
 export default Buttons;
