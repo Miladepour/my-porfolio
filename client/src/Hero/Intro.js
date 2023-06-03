@@ -6,7 +6,7 @@ const Intro = () => {
     <Container className={styles.hero}>
       <Row>
         <Col>
-          <p className={styles.heroFristP}>Hi, my name is 👋🏼</p>
+          <p className={styles.heroFristP}>Hey 👋🏼 my name is</p>
         </Col>
       </Row>
       <Row>

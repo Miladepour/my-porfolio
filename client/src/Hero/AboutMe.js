@@ -4,7 +4,7 @@ import galexy from "../assets/galexy.png";
 
 const AboutMe = () => {
   return (
-    <Container className={styles.aboutMe}>
+    <Container className={styles.aboutMe} fluid>
       <Row>
         <Col>
           <h3 className={styles.aboutMeTitle}>
