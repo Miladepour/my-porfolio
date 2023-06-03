@@ -10,7 +10,7 @@ const NavBar = () => {
     <Navbar bg="black" expand="lg" className={styles.navvv}>
       <Container>
         <Navbar.Brand className={styles.logo} href="/">
-          <Link to="/">Milad E-Pour</Link>
+          <Link to="/my-portfolio">Milad E-Pour</Link>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"

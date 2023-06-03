@@ -1,28 +1,28 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const mongoose = require('mongoose');
-const dotenv = require('dotenv');
-const routesUrls = require('./routes/routes');
-const downloadcv = require('./routes/downloadcv');
-const cors = require('cors');
+const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+const routesUrls = require("./routes/routes");
+const downloadcv = require("./routes/downloadcv");
+const cors = require("cors");
 
 dotenv.config();
 
-mongoose.set('strictQuery', false);
+mongoose.set("strictQuery", false);
 
 mongoose.connect(process.env.DATABASE_ACCESS, () => {
-  console.log('Database Connected ...');
+  console.log("Database Connected ...");
 });
 
 app.use(express.json());
 app.use(cors());
-app.use('/api', routesUrls);
-app.use('/api/downloadcv', downloadcv);
+app.use("/api/signup", routesUrls);
+app.use("/api/downloadcv", downloadcv);
 
-app.get('/healthcheck', async (_req, res, _next) => {
+app.get("/healthcheck", async (_req, res, _next) => {
   const healthcheck = {
     uptime: process.uptime(),
-    message: 'OK',
+    message: "OK",
     timestamp: Date.now(),
   };
   try {
