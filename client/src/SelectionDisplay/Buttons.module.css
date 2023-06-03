@@ -75,9 +75,3 @@
   transition: 0s;
   transform: translate(0, 5%);
 }
-
-.btnSelection {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}

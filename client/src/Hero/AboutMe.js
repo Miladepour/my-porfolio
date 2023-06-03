@@ -44,7 +44,7 @@ const AboutMe = () => {
           <h3 style={{ fontSize: "70px", fontWeight: "bold" }}>
             My knowledge galaxy
           </h3>
-          <Image src={galexy}></Image>
+          <Image src={galexy} fluid></Image>
         </Col>
       </Row>
     </Container>

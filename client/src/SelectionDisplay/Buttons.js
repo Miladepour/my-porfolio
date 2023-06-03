@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Button } from "react-bootstrap";
+import { Button, Container, Row, Col } from "react-bootstrap";
 import experinceData from "../Data/experienceData.json";
 import educationData from "../Data/educationData.json";
 import volenteeringData from "../Data/volenteeringData.json";
@@ -33,48 +33,60 @@ const Buttons = ({ SetData, setMessage }) => {
     setMessage(random);
     setIsTitleVisible(false);
   }
-  function porjectOnClick() {
+
+  function projectOnClick() {
     SetData(project);
     setIsTitleVisible(false);
   }
+
   return (
-    <div>
-      {isTitleVisible && (
-        <h3 className={styles.title}>
-          Explore my journey by clicking on the buttons
-        </h3>
-      )}
-      <div className={styles.btnSelection}>
-        <Button
-          onClick={expOnClick}
-          variant="light"
-          className={styles.button86}
-        >
-          Experiences
-        </Button>
-        <Button
-          onClick={eduOnClick}
-          variant="light"
-          className={styles.button86}
-        >
-          Educations
-        </Button>
-        <Button
-          onClick={volOnClick}
-          variant="light"
-          className={styles.button86}
-        >
-          Volenteering
-        </Button>
-        <Button
-          onClick={porjectOnClick}
-          variant="light"
-          className={styles.button86}
-        >
-          Projects
-        </Button>
-      </div>
-    </div>
+    <Container>
+      <Row className="justify-content-center justify-content-md-between">
+        <Col xs="auto">
+          {isTitleVisible && (
+            <h3 className={styles.title}>
+              Explore my journey by clicking on the buttons
+            </h3>
+          )}
+        </Col>
+        <Col xs="auto">
+          <Button
+            onClick={expOnClick}
+            variant="light"
+            className={styles.button86}
+          >
+            Experiences
+          </Button>
+        </Col>
+        <Col xs="auto">
+          <Button
+            onClick={eduOnClick}
+            variant="light"
+            className={styles.button86}
+          >
+            Educations
+          </Button>
+        </Col>
+        <Col xs="auto">
+          <Button
+            onClick={volOnClick}
+            variant="light"
+            className={styles.button86}
+          >
+            Volunteering
+          </Button>
+        </Col>
+        <Col xs="auto">
+          <Button
+            onClick={projectOnClick}
+            variant="light"
+            className={styles.button86}
+          >
+            Projects
+          </Button>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

@@ -8,9 +8,8 @@ function List({ allData }) {
     <>
       {allData.map((data, index) => {
         return (
-          <Card as="h5" style={{ color: "black" }}>
+          <Card as="h5" style={{ color: "black" }} key={index}>
             <Card.Header
-              key={index}
               className={styles.cardHeader}
               style={{ fontWeight: "bold" }}
             >
@@ -23,15 +22,19 @@ function List({ allData }) {
               </Card.Title>
               <Card.Title>{data.date}</Card.Title>
               <Card.Text>{data.desc}</Card.Text>
-              <Card.Text>
-                {data.image ? <img src={data.image} alt="Project" /> : ""}
+              <Card.Text className="text-center">
+                {data.image && (
+                  <img
+                    src={data.image}
+                    alt="Project"
+                    className={styles.image}
+                  />
+                )}
               </Card.Text>
-              {data.link ? (
+              {data.link && (
                 <Button className={styles.button86} href={data.link}>
                   Visit this Website
                 </Button>
-              ) : (
-                ""
               )}
             </Card.Body>
           </Card>
@@ -40,4 +43,5 @@ function List({ allData }) {
     </>
   );
 }
+
 export default List;
