@@ -9,13 +9,13 @@
 /* CSS Button */
 .button86 {
   all: unset;
-  width: 100px;
-  height: 30px;
-  font-size: 20px;
+  width: 120px;
+  height: 40px;
+  font-size: 18px !important;
   background: transparent;
   border: none;
   position: relative;
-  color: #171718;
+  color: #0000a386;
   cursor: pointer;
   z-index: 1;
   padding: 20px 40px;
@@ -26,7 +26,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 .button86::after,
