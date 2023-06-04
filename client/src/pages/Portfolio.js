@@ -25,10 +25,10 @@ const Portfolio = () => {
         </Col>
       </Row>
       <Row className="pt-4">
-        <Col className="p-4 d-flex flex-wrap justify-content-around">
+        <Col className=" d-flex flex-wrap justify-content-around">
           {project.map((data, index) => {
             return (
-              <Card style={{ width: "25rem", color: "black" }}>
+              <Card style={{ width: "25rem", color: "black", margin: "10px" }}>
                 <Card.Img variant="top" src={data.image} />
                 <Card.Body>
                   <Card.Title style={{ fontWeight: "bold" }}>
