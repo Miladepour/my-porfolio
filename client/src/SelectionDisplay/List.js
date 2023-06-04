@@ -1,5 +1,4 @@
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+import { Image, Button, Card } from "react-bootstrap";
 import styles from "./List.module.css";
 import ReactCountryFlag from "react-country-flag";
 
@@ -24,10 +23,11 @@ function List({ allData }) {
               <Card.Text>{data.desc}</Card.Text>
               <Card.Text className="text-center">
                 {data.image && (
-                  <img
+                  <Image
                     src={data.image}
                     alt="Project"
                     className={styles.image}
+                    fluid
                   />
                 )}
               </Card.Text>
