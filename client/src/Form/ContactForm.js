@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import axios from "axios";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import styles from "./ContactFrom.module.css";
 
 const ContactForm = () => {
   const form = useRef();
@@ -118,7 +119,9 @@ const ContactForm = () => {
         />
       </Form.Group>
 
-      <Button type="submit">Submit</Button>
+      <Button type="submit" className={styles.button86}>
+        Submit
+      </Button>
       <p>{afterSubmit}</p>
     </Form>
   );
