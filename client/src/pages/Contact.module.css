@@ -9,3 +9,14 @@
 .pageHeaderText {
   color: rgb(0, 41, 96);
 }
+.contactImage{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  .contactImage {
+      width: 100%;
+      height: 100%;
+  }
+}
