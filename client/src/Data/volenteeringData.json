@@ -1,12 +1,12 @@
 [
     {
         "id": 1,
-        "title": "Founder",
-        "company": "Tarannom Christan Network Channel",
-        "date": "July 2016 - Present",
-        "location": "Sweden - United Kingdom",
-        "desc": "Tarannom TV is a Christian network television channel. All programs and sections are missionary and educational. Some programs are Talk shows while others are music videos, and other parts are lyrics and articles. The programs are broadcast through different platforms such as Tarannom TV's YouTube channel and other social media. On Tarannom TV's website, there is a news page, a magazine and a section for children. Below is the link and a picture on the page.",
-        "countryCode":"SE"
+        "title": "Full Stack Developer",
+        "company": "CodeYourFuture",
+        "date": "Feb 2023 - Present",
+        "location": "Manchester, England, United Kingdom",
+        "desc": "Contributed as a member of an Agile Scrum team, responsible for developing and delivering front-end and back-end applications to meet the needs of the users and the organization. Collaborated with the Product Team to build impactful features that support the day-to-day operations of CYF, utilizing Agile methodologies to ensure the efficient and effective delivery of high-quality software solutions.",
+        "countryCode":"GB"
     },
     {
         "id": 2,
@@ -16,5 +16,14 @@
         "location": "Manchester, England, United Kingdom",
         "desc": "A five-week daily digital course that helps people learn the basics of the internet and their smartphones.",
         "countryCode":"GB"
+    },
+    {
+        "id": 3,
+        "title": "Founder",
+        "company": "Tarannom Christan Network Channel",
+        "date": "July 2016 - Present",
+        "location": "Sweden - United Kingdom",
+        "desc": "Tarannom TV is a Christian network television channel. All programs and sections are missionary and educational. Some programs are Talk shows while others are music videos, and other parts are lyrics and articles. The programs are broadcast through different platforms such as Tarannom TV's YouTube channel and other social media. On Tarannom TV's website, there is a news page, a magazine and a section for children. Below is the link and a picture on the page.",
+        "countryCode":"SE"
     }
 ]

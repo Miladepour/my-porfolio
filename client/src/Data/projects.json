@@ -1,6 +1,22 @@
 [
     {
         "id": 1,
+        "title": "Event Manager",
+        "company": "Group Project",
+        "date": "2023",
+        "location": "United Kingdom",
+        "desc": "Effortlessly manage event attendance with our streamlined application. Say goodbye to manual record-keeping and welcome an efficient system where admins can manage members and events with ease. Upon member registration, a unique ID and QR code are sent for swift event check-ins. Just scan the QR code at events using a mobile device, ensuring accurate and hassle-free attendance tracking.",
+        "countryCode":"GB",
+        "link" : "https://d3n27sahgwxchw.cloudfront.net/",
+        "image" : "https://cynoco.co.uk/wp-content/uploads/2023/09/Screenshot-2023-09-13-at-15.37.38.png",
+        "tech":"Auth0, SendGrid, React Hook Form, Yup, AWS Elastic Beanstalk, AWS EC2, AWS Load Balancer, AWS S3, AWS CloudFront, AWS RDS, .",
+        "tools":"Git, GitHub, Slack, Zoom, Figma, Postman",
+        "github":"https://github.com/haroon-ali-dev/event-manager",
+        "projectLocation": "India / United Kingdom / Remote",
+        "myRole":"Full-stack Developer"
+    },
+    {
+        "id": 1,
         "title": "Kunji",
         "company": "Project Unlearn",
         "date": "2022",
@@ -41,7 +57,7 @@
         "countryCode":"GB",
         "link" : "/",
         "image" : "https://cynoco.co.uk/wp-content/uploads/2023/05/Screenshot-2023-05-30-at-21.50.24.png",
-        "tech":"React, Node.js, Express, HTML, CSS, JavaScript, Bootstrap, Open AI API",
+        "tech":"React, Node.js, Express, HTML, CSS, JavaScript, Bootstrap, Open AI API, GCP",
         "tools":"Git, GitHub, Postman",
         "github":"https://github.com/Miladepour/christianchatai",
         "projectLocation": "United Kingdom / Remote",

@@ -5,20 +5,32 @@ import galexy from "../assets/galexy.png";
 const AboutMe = () => {
   return (
     <Container className={styles.aboutMe} fluid>
-      <Row>
+      <Row className="mb-5">
         <Col>
           <h3 className={styles.aboutMeTitle}>
             <span className={styles.aboutMeTitle}>01.</span>About Me
           </h3>
           <p className={styles.aboutMeText}>
-            Greetings! I'm a web developer passionate about bringing ideas to
-            life on the internet. My journey in web development began in 2015
-            when I delved into the world of WordPress and Wix, experimenting
-            with editing websites. Since then, my fascination with creating
-            online experiences has only grown. I specialize in designing and
-            developing dynamic web applications using modern technologies. Let's
-            collaborate and transform your vision into a captivating online
-            presence.
+            Greetings! As a full-stack web developer with a passion for modern
+            technologies, I excel in creating scalable and user-centered web
+            applications using the MERN stack. My strong technical skills,
+            combined with exceptional interpersonal abilities, enable me to
+            effectively communicate and collaborate with clients from diverse
+            backgrounds. 
+            <br />
+            Bringing new ideas to life and a constant thirst for
+            knowledge and growth drive me to continuously enhance my IT skills.
+            My ultimate goal is to use my technical expertise to make a positive
+            impact on individuals and organizations. My skill set as a
+            full-stack developer encompasses HTML, CSS, JavaScript, React, Node,
+            SQL, MongoDB, and Jest. I have hands-on experience in designing,
+            developing, and deploying web applications, and I am proud to have
+            completed several successful projects during my studies. 
+            <br />
+            I am also an active member of the tech community, having contributed to
+            open-source projects and delivered speeches at events. In the
+            future, I aim to continue learning and growing as a web developer,
+            making a positive impact on the industry.
           </p>
         </Col>
         <Col>
@@ -36,6 +48,7 @@ const AboutMe = () => {
             <li>GitHub</li>
             <li>Docker</li>
             <li>Google Cloud Platform</li>
+            <li>AWS</li>
           </ul>
         </Col>
       </Row>

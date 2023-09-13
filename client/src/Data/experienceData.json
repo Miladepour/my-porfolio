@@ -1,6 +1,15 @@
 [
+  {
+    "id": 1,
+    "title": "Full Stack Developer",
+    "company": "CodeYourFuture",
+    "date": "Feb 2023 - Present",
+    "location": "Manchester, England, United Kingdom",
+    "desc": "Contributed as a member of an Agile Scrum team, responsible for developing and delivering front-end and back-end applications to meet the needs of the users and the organization. Collaborated with the Product Team to build impactful features that support the day-to-day operations of CYF, utilizing Agile methodologies to ensure the efficient and effective delivery of high-quality software solutions.",
+    "countryCode":"GB"
+  },
     {
-      "id": 1,
+      "id": 2,
       "title": "Trainee",
       "company": "CodeYourFuture",
       "date": "Mar 2022 - Present",
@@ -9,7 +18,7 @@
       "countryCode":"GB"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Co-Founder",
       "company": "Cynoco Sweden",
       "date": "Jan 2021 - Jan 2022",
@@ -18,7 +27,7 @@
       "countryCode":"SE"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "IT Support Specialist",
       "company": "Cynoco Sweden",
       "date": "Aug 2021 - Nov 2021",
@@ -27,7 +36,7 @@
       "countryCode":"SE"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "IT Manager",
       "company": "Sepid Holiday Travel",
       "date": "Dec 2017 - Feb 2021",
